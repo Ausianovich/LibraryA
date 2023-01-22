@@ -9,7 +9,7 @@ import Foundation
 
 public final class LibraryDescriptions {
     
-    static var shared: LibraryDescriptions = {
+    static public var shared: LibraryDescriptions = {
         let instance = LibraryDescriptions()
         
         return instance
@@ -17,7 +17,7 @@ public final class LibraryDescriptions {
     
     private init() {}
     
-    func printLibraryName() {
+    public func printLibraryName() {
         print("---!!!--- This is LIBRARY A")
     }
 }
